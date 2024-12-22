@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide - NatureInc</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="/">NatureInc</a></div>
+            <ul class="nav-links">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="#guide">Guides</a>
+                    <ul class="dropdown">
+                        <li><a href="#typography">Typography</a></li>
+                        <li><a href="#navigation">Navigation</a></li>
+                        <li><a href="#colors">Colors</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#messages">Messages</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#spinner">Spinner</a></li>
+                        <li><a href="#panels">Panels</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+        <h1 class="title">Style Guide</h1>
+        <p class="subtitle">Guidelines for consistency and quality.</p>
+    </header>
+
+    <!-- Sections -->
+
+    <!-- Typography Section -->
+    <section id="typography">
+        <h2>Typography</h2>
+        <p>Font used is Arial, with sans-serif as fallback.</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <p>Paragraph text</p>
+    </section>
+
+    <!-- Nav Section -->
+    <section id="nav">
+        <h2>Navigation</h2>
+        <h4>Usage:</h4>
+        <div class="code">
+            <pre><code>&lt;nav class="navbar"&gt;
+    &lt;div class="logo"&gt;
+        &lt;a href="/"&gt;NatureInc&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;ul class="nav-links">
+        &lt;li>&lt;a href="/">Home&lt;/a>&lt;/li>
+        &lt;li>
+            &lt;a href="#guide">Guides&lt;/a>
+            &lt;ul class="dropdown">
+                &lt;li>&lt;a href="#typography">Typography&lt;/a>&lt;/li>
+            &lt;/ul>
+        &lt;/li>
+    &lt;/ul>
+    &lt;div class="menu-toggle" id="mobile-menu">
+        &lt;span class="bar">&lt;/span>
+        &lt;span class="bar">&lt;/span>
+        &lt;span class="bar">&lt;/span>
+    &lt;/div>
+&lt;/nav&gt;</code></pre>
+        </div>
+    </section>
+
+    <!-- Colors Section -->
+    <section id="colors">
+        <h2>Color Palette</h2>
+        <div class="color-swatch">
+            <div class="color-box" style="background: #a3af9e;"></div>
+            <p>Primary - #a3af9e</p>
+        </div>
+        <div class="color-swatch">
+            <div class="color-box" style="background: #688868;"></div>
+            <p>Secondary - #688868</p>
+        </div>
+        <div class="color-swatch">
+            <div class="color-box" style="background: #ffd66b;"></div>
+            <p>Accent - #ffd66b</p>
+        </div>
+        <div class="color-swatch">
+            <div class="color-box" style="background: #f4f4f4;"></div>
+            <p>Neutral - #f4f4f4</p>
+        </div>
+        <div class="color-swatch">
+            <div class="color-box" style="background: #2f3e2f;"></div>
+            <p>Dark Accent - #2f3e2f</p>
+        </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section id="buttons">
+        <h2>Buttons</h2>
+        <div class="button-section">
+            <button class="primary">Primary Button</button>
+            <button class="secondary">Secondary Button</button>
+            <button class="positive">Positive Button</button>
+            <button class="negative">Negative Button</button>
+            <button class="neutral">Neutral Button</button>
+        </div>
+        <h4>Usage:</h4>
+        <div class="code">
+            <pre>
+<code>&lt;button class="primary">text&lt;/button></code>
+<code>&lt;button class="secondary">text&lt;/button></code>
+<code>&lt;button class="positive">text&lt;/button></code>
+<code>&lt;button class="negative">text&lt;/button></code>
+<code>&lt;button class="neutral">text&lt;/button></code>
+        </pre>
+        </div>
+    </section>
+
+    <!-- Tables Section -->
+    <section id="tables">
+        <h2>Tables</h2>
+
+        <div class="minimal">
+            <h3>Minimalistic</h3>
+            <div class="table-container">
+                <table class="table minimal-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>john.doe@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>Jane.doe@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>john.Smith@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jane Smith</td>
+                            <td>jane.smith@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Usage:</h4>
+            <div class="code">
+                <pre>
+<code>&lt;table class="table minimal-table">&lt;/table></code>
+                </pre>
+            </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="wide">
+            <h3>Wide</h3>
+            <div class="table-container">
+                <table class="table wide-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Nickname</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>john.doe@example.com</td>
+                            <td>Johnny</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>Jane.doe@example.com</td>
+                            <td>Jenny</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>john.Smith@example.com</td>
+                            <td>The Smith</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jane Smith</td>
+                            <td>jane.smith@example.com</td>
+                            <td>Sminny</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4>Usage:</h4>
+            <div class="code">
+                <pre>
+<code>&lt;table class="table wide-table">&lt;/table></code>
+                </pre>
+            </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="long">
+            <h3>Long</h3>
+            <div class="table-container">
+                <table class="table long-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>john.doe@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Doe</td>
+                            <td>Jane.doe@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>John Smith</td>
+                            <td>john.Smith@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Jane Smith</td>
+                            <td>jane.smith@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Usage:</h4>
+            <div class="code">
+                <pre>
+<code>&lt;table class="table long-table">&lt;/table></code>
+                </pre>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Messages Section -->
+    <section id="messages">
+        <h2>Messages</h2>
+        <div class="message-panel info-message">
+            <span class="panel-message">
+                <strong>Message:</strong>This is all the infos
+            </span>
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="message-panel info-warning">
+            <span class="panel-message">
+                <strong>Warning:</strong>This is all the warnings
+            </span>
+            <button class="close-button">&times;</button>
+
+        </div>
+        <div class="message-panel info-error">
+            <span class="panel-message">
+                <strong>Error:</strong>This is all the errors
+            </span>
+            <button class="close-button">&times;</button>
+        </div>
+        <div class="message-panel info-success">
+            <span class="panel-message">
+                <strong>Success:</strong>This is all the successes
+            </span>
+            <button class="close-button">&times;</button>
+        </div>
+
+        <h4>Usage:</h4>
+        <div class="code">
+            <pre>
+<code>&lt;div class="message-panel info-message">
+    &lt;span class="panel-message">
+        &lt;strong>Message:&lt;/strong>This is all the infos
+    &lt;/span>
+    &lt;button class="close-button">&times;&lt;/button>
+&lt;/div>
+&lt;div class="message-panel info-warning">
+    &lt;span class="panel-message">
+        &lt;strong>Warning:&lt;/strong>This is all the warnings
+    &lt;/span>
+    &lt;button class="close-button">&times;&lt;/button>
+&lt;/div>
+&lt;div class="message-panel info-error">
+    &lt;span class="panel-message">
+        &lt;strong>Error:&lt;/strong>This is all the errors
+    &lt;/span>
+    &lt;button class="close-button">&times;&lt;/button>
+&lt;/div>
+&lt;div class="message-panel info-success">
+    &lt;span class="panel-message">
+        &lt;strong>Success:&lt;/strong>This is all the successes
+    &lt;/span>
+    &lt;button class="close-button">&times;&lt;/button>
+&lt;/div>
+</code>
+        </pre>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="forms">
+        <h2>Forms</h2>
+        <h3>Example Form</h3>
+        <form class="form login-form">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required />
+            </div>
+            <div class="checkbox-group">
+                <input class="checkbox" type="checkbox" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <div class="button-container">
+                <button class="primary" type="submit">Login</button>
+            </div>
+        </form>
+        <h4>Usage:</h4>
+        <p></p>
+        <div class="code">
+            <pre>
+<code>&lt;form class="form">&lt;/form></code>
+<code>&lt;div class="form-group">&lt;/div></code>
+<code>&lt;input class="checkbox" type="checkbox" id="remember-me"></code>
+
+            </pre>
+        </div>
+    </section>
+
+    <!-- Spinner -->
+    <section id="spinner">
+        <h2>Spinner</h2>
+        <div class="spinner-container">
+            <div class="spinner"></div>
+        </div>
+
+        <h4>Usage:</h4>
+        <div class="code">
+            <pre>
+<code>&lt;div class="spinner-container">
+    &lt;div class="spinner">&lt;/div>
+&lt;/div></code>
+            </pre>
+        </div>
+
+    </section>
+
+    <!-- Panels -->
+    <section id="panels">
+        <h2>Panels</h2>
+        <div class="panel neutral">
+            <span class="panel-message">A neutral panel with all the stuffs.</span>
+        </div>
+
+        <div class="panel positive">
+            <span class="panel-message">So much positivity in the panel.</span>
+        </div>
+
+        <div class="panel negative">
+            <span class="panel-message">This panel is so negative with errors or warnings.</span>
+        </div>
+
+        <h4>Usage:</h4>
+        <p>Change the keyword positive to negative or neutral for different looks</p>
+
+        <div class="code">
+            <pre>
+<code>&lt;div class="panel positive">
+    &lt;span class="panel-message">So much positivity in the panel.&lt;/span>
+&lt;/div></code>
+            </pre>
+        </div>
+    </section>
+
+
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
